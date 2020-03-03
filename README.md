@@ -14,8 +14,25 @@ This tool presents a workflow for creating an optimized EV charging network acro
 
 
 
-## Range Anxiety
+## 
 
-* Identify areas along NC highways **<u>not</u>** served by DCFC charging locations. These are areas where we want to focus in placing new sites. 
-* 
+<u>Objective</u>: Create a constellation of charging sites such that all sections of interstate are within `50 miles` of a charger. 
+
+<u>Data needs</u>:
+
+* Locations of operational DCFC chargers (NREL API)
+* NC Highway network, as a graph (OSM)
+
+<u>Workflow</u>: 
+
+* Identify all currently "safe" areas: all areas within a 50 mile drive to existing DCFC charger
+* Identify viable extension areas: areas within 50 miles of edge of "safe" areas
+* Identify all candidate locations (exits) within these areas:
+  * Minimum # of amenities
+  * Minimum distance from power substations
+  * Outside of flood risk areas
+  * Minimum distance from existing infrastructure
+* Weight considerations
+* Select optimal site within expansion zone and add to network
+* Repeat until all of NC is covered
 
