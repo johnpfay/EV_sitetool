@@ -12,9 +12,7 @@ This tool presents a workflow for creating an optimized EV charging network acro
 * Favoring charging locations that offer amenities such as restaurants, cafes, entertainment.
 * Minimizing costs by reducing redundant sites, minimizing up-front infrastructure needs, and avoiding hazards. 
 
-
-
-## 
+---
 
 <u>Objective</u>: Create a constellation of charging sites such that all sections of interstate are within `50 miles` of a charger. 
 
@@ -36,3 +34,13 @@ This tool presents a workflow for creating an optimized EV charging network acro
 * Select optimal site within expansion zone and add to network
 * Repeat until all of NC is covered
 
+---
+
+#### Notebooks
+
+* `Range-Anxiety-1-GetData`
+  * Fetch NREL DCFC location data
+  * Fetch OSM major roads network
+* `Range-Anxiety-2-Analyze-Data`
+  * Read in saved data (DCFC sites and road network)
+  * Identify "safe" areas, i.e. areas within 50 miles of an existing charger, and "anxious" areas beyond 50 miles. 
