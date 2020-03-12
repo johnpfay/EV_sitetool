@@ -39,8 +39,9 @@ This tool presents a workflow for creating an optimized EV charging network acro
 #### Notebooks
 
 * `Range-Anxiety-1-GetData`
-  * Fetch NREL DCFC location data
-  * Fetch OSM major roads network
+  * Fetch NREL DCFC location data; tidy; save as csv and shapefile
+  * Fetch OSM major roads network (motorway, trunk, primary roads); save as graphml and shapefile
 * `Range-Anxiety-2-Analyze-Data`
-  * Read in saved data (DCFC sites and road network)
+  * Read in saved DCFC sites and NC major road network 
   * Identify "safe" areas, i.e. areas within 50 miles of an existing charger, and "anxious" areas beyond 50 miles. 
+* 
